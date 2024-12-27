@@ -1,0 +1,65 @@
+GET http://localhost:3001/api/notes/
+
+###
+GET http://localhost:3001/api/info/
+###
+GET http://localhost:3001/api/notes/10
+###
+DELETE http://localhost:3001/api/notes/676ca5e80b3fd7309ed600a2
+###
+POST http://localhost:3001/api/notes
+content-type: application/json
+
+{"content":"Dingus McPringus","important":true}
+###
+POST http://localhost:3001/api/notes
+content-type: application/json
+
+{"content":"Pook Null","important":false}
+###
+POST http://localhost:3001/api/notes
+content-type: application/json
+
+{"content":"Silly bananas","important":true}
+###
+PUT http://localhost:3001/api/notes/676e1de4c9e0f986499ed33f
+content-type: application/json
+
+{"content":"This is important","important":true}
+###
+PUT http://localhost:3001/api/notes/676e1e3022ef567cf61dfb64
+content-type: application/json
+
+{"content":"Look out for those falling rocks!","important":true}
+###
+PUT http://localhost:3001/api/notes/676e1e6ce9c776f4b15027a9
+content-type: application/json
+
+{"content":"This is unimportant","important":false}
+
+
+// RENDER
+###
+GET https://fso-part3-phonebook-backend-9sef.onrender.com/api/notes/
+
+###
+GET https://fso-part3-phonebook-backend-9sef.onrender.com/api/info/
+###
+GET https://fso-part3-phonebook-backend-9sef.onrender.com/api/notes/10
+###
+DELETE https://fso-part3-phonebook-backend-9sef.onrender.com/api/notes/4
+###
+POST https://fso-part3-phonebook-backend-9sef.onrender.com/api/notes
+content-type: application/json
+
+{"name":"Fulp Gert","number":"09 854 6859"}
+###
+POST https://fso-part3-phonebook-backend-9sef.onrender.com/api/notes
+content-type: application/json
+
+{"name":"Pook Null","number":""}
+###
+POST https://fso-part3-phonebook-backend-9sef.onrender.com/api/notes
+content-type: application/json
+
+{"name":"Fulp Gert","number":"09 854 6859"}
